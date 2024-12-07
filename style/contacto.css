@@ -102,3 +102,60 @@
         width: 40px;
         margin: 0 20px;
     }
+
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        header img {
+            width: 50%;
+            margin-bottom: 20px;
+        }
+    
+        header nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        header nav ul li {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    
+        .contenedorPrincipal {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .contenedor {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .mapa iframe {
+            width: 100%;
+            height: auto;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        header img {
+            width: 70%;
+        }
+    
+        .info h2, .mapa h2 {
+            font-size: 1.5rem;
+        }
+    
+        .info p, .mapa p {
+            font-size: 1rem;
+        }
+    
+        .contacto img {
+            width: 30px;
+            margin: 0 10px;
+        }
+    }
